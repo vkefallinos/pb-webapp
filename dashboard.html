@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      
+    <![endif]-->
+    
+    
+    
+    <style>#custom-templates .empty-message {
+  padding: 5px 10px;
+ text-align: center;
+}</style>
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Dashboard</a>
+                    </li>
+                    <li><a href="#">Settings</a>
+                    </li>
+                    <li><a href="#">Profile</a>
+                    </li>
+                    <li><a href="#">Help</a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">Overview</a>
+                    </li>
+                    <li><a href="#">Reports</a>
+                    </li>
+                    <li><a href="#">Analytics</a>
+                    </li>
+                    <li><a href="#">Export</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Nav item</a>
+                    </li>
+                    <li><a href="">Nav item again</a>
+                    </li>
+                    <li><a href="">One more nav</a>
+                    </li>
+                    <li><a href="">Another nav item</a>
+                    </li>
+                    <li><a href="">More navigation</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Nav item again</a>
+                    </li>
+                    <li><a href="">One more nav</a>
+                    </li>
+                    <li><a href="">Another nav item</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main col-sm-9 col-sm-offset-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 well">
+                            <ul class="nav nav-tabs">
+                                <li><a href="#tab1" data-toggle="tab">Post</a>
+                                </li>
+                                <li><a href="#tab3" data-toggle="tab">Sources</a>
+                                </li>
+                                <li class="active"><a href="#tab4" data-toggle="tab">Feeds</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="tab1">
+                                    <div>
+                                        
+                                            <label class="control-label" >Field label</label>
+                                       
+<!--
+											<div style="height:200px;width:300px;border:solid" data-bind="text:input()">
+											</div>	
+-->
+						
+                                                 <div style="height:200px;width:300px;border:solid"  class="postbox" contenteditable="true" data-bind="textInput:input">
+												
+                                            </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h3>Person:</h3> 
+                                        </div>
+                                        <div class="col-md-8"></div>
+                                        <div class="media">
+                                            <a class="pull-left" href="#" data-toggle="tab">
+                                                <img class="media-object" src="file:///tmp/.org.chromium.Chromium.mkGxbe/placeholders/img5.jpg" width="100">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Nikos Lekas</h4>
+                                                <ul>
+                                                    <li>Age 34
+                                                        <br>
+                                                    </li>
+                                                    <li>Working as dev</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab2">
+                                    <p>Tab 2 content goes here...</p>
+                                </div>
+                                <div class="tab-pane" id="tab3">
+                                    <div class="form-group">
+                                        <label class="control-label" for="formInput2">Field label</label>
+                                        <input type="text" class="form-control" id="formInput2" placeholder="Placeholder text">
+                                    </div>
+                                    <p>Found Rss feeds...</p>
+                                    <article>
+                                        <header>
+                                            <div class="alert alert-danger"><strong>Found title,part of the article and an image!</strong>&nbsp;If you want to add more data to this feed click <a href="http://" data-toggle="tab">here</a>.</div>
+                                            <div class="media">
+                                                <a class="pull-left" href="#" data-toggle="tab">
+                                                    <img class="media-object" src="file:///tmp/.org.chromium.Chromium.mkGxbe/placeholders/img8.jpg" width="100">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                                                    vulputate fringilla. Donec lacinia congue felis in faucibus..... <u>Read the rest of the article</u>
+                                                </div>
+                                            </div>
+                                        </header>
+                                    </article>
+                                </div>
+                                <div class="tab-pane active" id="tab4">
+                                    <p>Here you can filter data from all your feeds
+                                    </p>
+                                    <div>
+                                        <input type="text" class="form-control dropdown" placeholder="Placeholder text">
+                                        <div class="dropdown"><a data-toggle="dropdown" href="#ka">Dropdown trigger</a>
+                                            <ul class="dropdown-menu" role="menu" style="width:400px" id="ka">
+                                                <li style="width:30%">
+                                                    <a href="#">
+                                                        <img src="file:///tmp/.org.chromium.Chromium.mkGxbe/placeholders/img9.jpg" width="50">Action</a>
+                                                </li>
+                                                <li style="width:30%;">
+                                                    <div class="dropdown"> <a data-toggle="dropdown" href="#">Dropdown trigger</a> 
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="#">Action</a>
+                                                            </li>
+                                                            <li><a href="#">Another action</a>
+                                                            </li>
+                                                            <li><a href="#">Something else here</a>
+                                                            </li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="#">Separated link</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>Tab 4 content goes here...
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="scrap">
+                            <h3>Scraper</h3> 
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-left text-info bg-success" style="width:100%">
+                    <div class="row">
+                        <div class="col-md-12 well">
+                            <div class="row">
+                                <div class="col-md-2"> monix </div>
+                                <div class="col-md-7"> shared all this </div>
+	                             <div class="col-md-3">  --two minutes ago</div>
+                             </div>
+                        </div>
+                        <div class="col-md-12 well">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p> <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-12 well">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="file:///tmp/.org.chromium.Chromium.mkGxbe/placeholders/img8.jpg" width="100">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                    Donec lacinia congue felis in faucibus.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 well text-center">
+                            <h4>Album name</h4>
+                            <figure>
+                                <img src="file:///tmp/.org.chromium.Chromium.mkGxbe/placeholders/img6.jpg" width="200">
+                                <img src="file:///tmp/.org.chromium.Chromium.mkGxbe/placeholders/img4.jpg" width="200">
+                                <img src="file:///tmp/.org.chromium.Chromium.mkGxbe/placeholders/img8.jpg" width="200">
+                                <figcaption>description: this is last year trip to australia...</figcaption>
+                                <button type="button" class="btn btn-default   btn-xs" style="width:100%;" data-toggle="popover" data-placement="bottom" title="See all the album" data-trigger="hover" data-html="false"><span class="caret"></span>
+                                </button>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+ <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="diffview.js"></script>
+    <script src="difflib.js"></script>
+    <script type="text/javascript" src="VerbalExpressions.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js"></script>
+   
+    <script type="text/javascript" src="typeahead.bundle.min.js"></script>
+   
+<script>
+	var user
+var UserRSAkey
+var UserPublicKeyString
+//~ here we login to couchdb
+function getPosts(name){
+	
+	    $posts = $.couch.db(name).allDocs({
+            include_docs:true,
+            success:function (data){
+                createhtml("#post","#posts",data)
+                
+                $(".createComment").on("click",function(){
+                    //we find the value of the comment box
+                    comment=$("Text"+this.id.substr(13)).val()
+                    console.log(comment)
+                    
+                });
+                $("#scrapesite").on("click",
+                                    function(e){
+                                        e.preventDefault()
+                                        happy= $("#happy").html()
+                                        $("html").html(happy)
+                                        outline="<style>.outline-element {outline: 2px solid #c00;border:2px solid #c00;} .outline-element-clicked {  outline: 1px solid #0c0;border:1px solid #0c0;}</style>"
+                                        $(outline).appendTo("html")
+                                        // $().appendTo("html");
+                                        $('h1,div,h2,h3,h4,h5,p,td,table,th,img').bind('mouseover mouseout click', function(event) {
+                                            var $tgt = $(event.target);
+                                            if (event.type == 'click'){
+                                                event.preventDefault()
+                                                $tgt.toggleClass('outline-element-clicked')
+                                                
+                                            }else{
+                                                $tgt.toggleClass('outline-element')
+                                            }
+                                            
+                                        });
+                                        
+                    
+                                        
+                                        
+                                    });
+                
+            }})
+    
+	
+	
+	}
+$("#login").couchLogin({
+    loggedIn : function(name,pass) {
+        var Bits = 1024; 
+		UserRSAkey = cryptico.generateRSAKey(pass, Bits);
+		UserPublicKeyString = cryptico.publicKeyString(UserRSAkey);
+        console.log(UserPublicKeyString)
+		//the data of the specific user come from a database named after his name
+		getPosts(name)
+    }, 
+    loggedOut : function() {
+        $("#posts").html("")
+    },
+    signedUp : function(user,pass){
+		var Bits = 1024; 
+		UserRSAkey = cryptico.generateRSAKey(pass, Bits);
+		UserPublicKeyString = cryptico.publicKeyString(UserRSAkey);
+		$.ajax({
+						type: "GET",
+						url:"http://"+location.hostname + ":8080/new_user/"+user+"===="+UserPublicKeyString,
+						success: function(data) {
+							getPosts(user)
+							console.log(data)
+						}
+					});
+		}
+    
+})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	var states = ['@Movies', '@Tv Series', '@People', '@News', 'California',
+  'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+  'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+  'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+  'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+];
+	
+	// constructs the suggestion engine
+	
+var states = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // `states` is an array of state names defined in "The Basics"
+  local: $.map(states, function(state) { return { value: state }; })
+});
+ 
+// kicks off the loading/processing of `local` and `prefetch`
+states.initialize();
+      searching=false  					
+ 
+	$(".postbox").keypress(function(e){
+        				console.log(this)
+        				//~ $("#drawer").html(this.value)
+        				codes={"@":64," ":32}
+        				if(e.keyCode==64 && searching==false){
+							searching=true
+        					$(this).append("<div id='bloodhound'><input style='color:red' class='term active typeahead' type='text' placeholder='tag'></div>")
+        					$(this).attr('contentEditable',false);
+        					$("input.term.active").focus();
+							 $('#bloodhound .typeahead').typeahead({
+								  hint: true,
+								  highlight: true,
+								  minLength: 1
+								},
+								{
+								  name: 'states',
+								  displayKey: 'value',
+								  // `ttAdapter` wraps the suggestion engine in an adapter that
+								  // is compatible with the typeahead jQuery plugin
+								  source: states.ttAdapter()
+								});
+							
+	       					
+        					$(this).children(".term").keypress(function(){
+								
+								term=$(this).html()
+								console.log(term)
+								term=term.replace("@","")
+								//~ omdb(term)
+								
+							})
+						}else if(e.keyCode==32 && searching==true && lastchar==32){
+							searching==false
+        					$(this).append("<span class='term active' style='color:red'></span>")
+        					$(this).attr('contentEditable',false);
+        					$(this).children(".term").attr('contentEditable',"false")
+        					$(this).focus()
+						}else if(searching==true)
+							{lastchar=e.keyCode
+								
+								}
+        			})
+	
+	
+	
+       ko.bindingHandlers.editableText = {
+		    init: function(element, valueAccessor) {
+		        $(element).on('blur', function() {
+		            var observable = valueAccessor();
+		            observable( $(this).text() );
+		        });
+		    },
+		    update: function(element, valueAccessor) {
+		        var value = ko.utils.unwrapObservable(valueAccessor());
+		        $(element).text(value);
+		    }
+		}; 
+        
+        
+      function create(){
+		  var self=this;
+		  self.content=["Movies","Tv Series","News Articles","People",]
+		  self.textmessage=ko.observable()
+		  self.textsearch=ko.observable()
+		  
+		  
+		  }  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        var data=[{"Title":"X-Men","Year":"2000","Rated":"PG-13","Released":"14 Jul 2000","Runtime":"104 min","Genre":"Action, Adventure, Sci-Fi","Director":"Bryan Singer","Writer":"Tom DeSanto (story), Bryan Singer (story), David Hayter (screenplay)","Actors":"Hugh Jackman, Patrick Stewart, Ian McKellen, Famke Janssen","Plot":"Two mutants come to a private academy for their kind whose resident superhero team must oppose a terrorist organization with similar powers.","Language":"English","Country":"USA","Awards":"11 wins & 25 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMTYxMTEzNTgzM15BMl5BanBnXkFtZTcwMjg1MzAwMQ@@._V1_SX300.jpg","Metascore":"64","imdbRating":"7.4","imdbVotes":"338,175","imdbID":"tt0120903","Type":"movie","Response":"True"},{"Title":"Batman","Year":"1989","Rated":"PG-13","Released":"23 Jun 1989","Runtime":"126 min","Genre":"Action","Director":"Tim Burton","Writer":"Bob Kane (Batman characters), Sam Hamm (story), Sam Hamm (screenplay), Warren Skaaren (screenplay)","Actors":"Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl","Plot":"The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.","Language":"English, French","Country":"USA, UK","Awards":"Won 1 Oscar. Another 9 wins & 22 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg","Metascore":"66","imdbRating":"7.6","imdbVotes":"219,897","imdbID":"tt0096895","Type":"movie","Response":"True"} ]
+         // Class to represent a row in the seat reservations grid
+        //~ var data=[]
+        				
+        // Overall viewmodel for this screen, along with initial state
+        function MoviesViewModel() {
+            var self = this;
+            
+			self.input=ko.observable("kk")
+            self.term=ko.observable("Pi")
+            // Non-editable catalog data - would come from the server
+            self.Movies = ko.observableArray(data)
+            self.output=ko.computed(
+				function(){
+					if (self.input().indexOf("@")>-1){
+						output=input.replace("@","kkk")
+						}
+				})
+        	self.addMovie = function() {
+                  $.ajax({
+        			type: "GET",
+        			url:"http://www.omdbapi.com/?i=&t="+self.term(),
+        			success: function(strdata) {
+        				console.log(strdata)
+        				jsondata=JSON.parse(strdata)
+        				$.ajax({
+        					type: "GET",
+        					url:"http://webservice.fanart.tv/v3/movies/"+jsondata.imdbID+"?api_key=3a43498ff1692c20113144f8cd7e6f8b&client_key=da7cb4f46120c3b0f27b71f94515fcc0",
+        					success: function(strdata) {
+        						console.log(strdata)
+        						
+        						}
+        					})
+        
+        				self.Movies(jsondata)
+        				}
+        			});
+            }
+        }
+        
+        ko.applyBindings(new MoviesViewModel());
+    </script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+
+
+
+
+
+</body>
+
+</html>
